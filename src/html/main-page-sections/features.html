@@ -1,0 +1,87 @@
+<div class="features">
+    <div class="container">
+        <h2 class="features__title">
+            Features you'll
+            <span>Love</span>
+        </h2>
+        <div class="swiper__outer">
+            <div class="features__bg-circle"></div>
+            <div class="swiper-button-prevv">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="32" height="32" rx="4" fill="white" fill-opacity="0.03" />
+                    <path opacity="0.6" fill-rule="evenodd" clip-rule="evenodd" d="M9.74756 16L18.2328 7.51472L19.213 8.49489L11.7079 16L19.213 23.5051L18.2328 24.4853L9.74756 16Z" fill="white" />
+                </svg>
+            </div>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="img/slider_icon-1.svg" class="swiper-slide__image" alt="People icon">
+                        <p class="swiper-slide__text">Invite people <br> to your events</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/slider_icon-2.svg" class="swiper-slide__image" alt="Camera icon">
+                        <p class="swiper-slide__text">Video calls <br> integration</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/slider_icon-3.svg" class="swiper-slide__image" alt="Location icon">
+                        <p class="swiper-slide__text">Use Apple Maps <br> or Google Maps</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/slider_icon-4.svg" class="swiper-slide__image" alt="Hidden eye icon">
+                        <p class="swiper-slide__text">Hide calendars <br> you don't need</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/slider_icon-1.svg" class="swiper-slide__image" alt="People icon">
+                        <p class="swiper-slide__text">Invite people <br> to your events</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/slider_icon-2.svg" class="swiper-slide__image" alt="Camera icon">
+                        <p class="swiper-slide__text">Video calls <br> integration</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/slider_icon-3.svg" class="swiper-slide__image" alt="Location icon">
+                        <p class="swiper-slide__text">Use Apple Maps <br> or Google Maps</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/slider_icon-4.svg" class="swiper-slide__image" alt="Hidden eye icon">
+                        <p class="swiper-slide__text">Hide calendars <br> you don't need</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-nextt">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="32" height="32" rx="4" fill="white" fill-opacity="0.03" />
+                    <path opacity="0.6" fill-rule="evenodd" clip-rule="evenodd" d="M22.3137 16L13.8284 24.4853L12.8483 23.5051L20.3534 16L12.8483 8.49489L13.8284 7.51472L22.3137 16Z" fill="white" />
+                </svg>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper('.swiper', {
+    direction: 'horizontal',
+    loop: true,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+    navigation: {
+        nextEl: '.swiper-button-nextt',
+        prevEl: '.swiper-button-prevv',
+    },
+    slidesPerView: 2,
+    spaceBetween: 12,
+    breakpoints: {
+        680: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+        },
+        1330: {
+            slidesPerView: 4,
+            spaceBetween: 24,
+        },
+    }
+});
+</script>

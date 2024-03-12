@@ -1,0 +1,74 @@
+.send-email-popup {
+    background: #fff;
+    border-radius: 4px;
+    padding: 32px;
+    position: relative;
+
+    @include mobile {
+        padding: 32px 20px;
+    }
+
+    &__wrapper {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: none;
+        z-index: 10;
+        padding: 0 20px;
+        max-width: 472px;
+        width: 100%;
+
+        @include tablet {
+            max-width: 503px;
+        }
+
+        &.opened {
+            display: block;
+        }
+    }
+
+    &__icon-checked {
+        display: block;
+        width: 38px;
+        height: 38px;
+        margin: 0 auto 22px;
+
+        @include mobile {
+            margin: 0 auto 20px;
+        }
+    }
+
+    &__icon-close {
+        display: block;
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        top: 12px;
+        right: 12px;
+        cursor: pointer;
+    }
+
+    &__title {
+        font-family: SpaceGrotesk;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 130%;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        text-align: center;
+        color: $dark-text;
+        margin: 0 0 12px;
+
+
+    }
+
+    &__paragraph {
+        font-family: OpenSans;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        text-align: center;
+        color: $dark-text;
+    }
+}
